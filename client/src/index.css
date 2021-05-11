@@ -1,10 +1,14 @@
 @font-face {
   font-family: 'Tagesschrift';
-  src: url('./fonts/got.ttf');
+  src: url('./assets/fonts/got.ttf');
 }
 
 .countdown {
   font-family: 'Tagesschrift'
+}
+
+.countdown-label {
+  font-size: small;
 }
 
 .countdown-number {

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import logo from '../logo.svg';
 import './App.css';
 
 function App() {
@@ -32,16 +31,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <label style={{fontFamily: 'Tagesschrift'}}>Winter is coming...</label> <br />
+        <label style={{fontFamily: 'Tagesschrift', fontSize: 'x-large', marginTop: 100}}>Winter is coming...</label> <br /><br />
         <div className="countdown">
-          <span className="countdown-number">{timeLeft.days}</span> Days &nbsp;&nbsp;
-          <span className="countdown-number">{timeLeft.hours}</span> Hrs &nbsp;&nbsp;
-          <span className="countdown-number">{timeLeft.minutes}</span> Mins &nbsp;&nbsp;
-          <span className="countdown-number">{timeLeft.seconds}</span> Secs &nbsp;&nbsp;
+          <span className="countdown-number">{timeLeft.days}</span> <span className="countdown-label">Days</span> &nbsp;&nbsp;
+          <span className="countdown-number">{timeLeft.hours}</span> <span className="countdown-label">Hrs</span> &nbsp;&nbsp;
+          <span className="countdown-number">{timeLeft.minutes}</span> <span className="countdown-label">Mins</span> &nbsp;&nbsp;
+          <span className="countdown-number">{timeLeft.seconds}</span> <span className="countdown-label">Secs</span> &nbsp;&nbsp;
         </div>
         <br />
         <label style={{fontFamily: 'Tagesschrift'}}>Until the location is revealed...</label>
-        <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
   );
