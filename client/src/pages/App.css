@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34b7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+  .App-header::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    background: #3e4147 url('../assets/images/got-throne-countdown.JPG') center/contain no-repeat;
+    /* transform: translateX(-25%); */
+    z-index: -1;
+  }
 
 .App-link {
   color: #61dafb;
