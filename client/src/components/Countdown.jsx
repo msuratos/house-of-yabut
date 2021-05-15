@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Countdown.css';
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({});
@@ -27,7 +28,7 @@ const Countdown = () => {
 
   return (
     <header className="App-header">
-      <label style={{ fontFamily: 'Tagesschrift', fontSize: 'x-large', marginTop: 100 }}>Winter is coming...</label> <br /><br />
+      <label className="countdown-header">Winter is coming...</label> <br /><br />
       <div className="countdown">
         <span className="countdown-number">{timeLeft.days}</span> <span className="countdown-label">Days</span> &nbsp;&nbsp;
           <span className="countdown-number">{timeLeft.hours}</span> <span className="countdown-label">Hrs</span> &nbsp;&nbsp;
