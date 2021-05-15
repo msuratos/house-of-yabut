@@ -1,0 +1,18 @@
+.countdown {
+  font-family: 'Tagesschrift'
+}
+
+.countdown-header {
+  font-family: 'Tagesschrift'; 
+  font-size: x-large;
+  margin-top: 100px;
+}
+
+.countdown-label {
+  font-size: small;
+}
+
+.countdown-number {
+  font-size: xx-large;
+  color: rgb(209, 154, 4);
+}

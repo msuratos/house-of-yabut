@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34b7;
   min-height: 100vh;
@@ -27,25 +16,8 @@
   .App-header::before {
     content: "";
     position: absolute;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    z-index: -1;
-    background: #3e4147 url('../assets/images/got-throne-countdown.JPG') center/contain no-repeat;
-    /* transform: translateX(-25%); */
+    width: 100vw;
+    height: 100vh;
+    background: #3e4147 url('../assets/images/got-throne-countdown.JPG') center/200% no-repeat;
     z-index: -1;
   }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

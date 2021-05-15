@@ -3,19 +3,6 @@
   src: url('./assets/fonts/got.ttf');
 }
 
-.countdown {
-  font-family: 'Tagesschrift'
-}
-
-.countdown-label {
-  font-size: small;
-}
-
-.countdown-number {
-  font-size: xx-large;
-  color: rgb(209, 154, 4);
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
