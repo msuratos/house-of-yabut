@@ -1,11 +1,38 @@
-.countdown {
-  font-family: 'Tagesschrift'
+.countdown-background {
+  background: #00000000 url('../assets/images/got-throne-countdown.JPG') center/200% no-repeat;
+  content: "";
+  height: 100vh;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+}
+
+.countdown-body {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  z-index: 1;
+}
+
+.countdown-container {
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.countdown-footer {
+  z-index: 1;
 }
 
 .countdown-header {
-  font-family: 'Tagesschrift'; 
   font-size: x-large;
-  margin-top: 100px;
+  margin-top: 50px;
+  z-index: 1;
 }
 
 .countdown-label {
@@ -15,4 +42,5 @@
 .countdown-number {
   font-size: xx-large;
   color: rgb(209, 154, 4);
+  z-index: 1;
 }
