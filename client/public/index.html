@@ -29,6 +29,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="player" hidden></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +40,32 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // https://stackoverflow.com/questions/15090782/youtube-autoplay-not-working-on-mobile-devices-with-embedded-html5-player (Mark's answer)
+      let player;
+      let tag = document.createElement('script');
+      let firstScriptTag = document.getElementsByTagName('script')[0];
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          width: '100%',
+          videoId: 'AdQ3JDLlmPI',
+          playerVars: { 'autoplay': 1, 'playsinline': 1 },
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+    
+      function onPlayerReady(event) {
+        let youtubeiframe = event.target.h;
+        youtubeiframe.style.display = "none";
+        console.log(youtubeiframe.style);
+        event.target.playVideo();
+      }
+    </script>
   </body>
 </html>
