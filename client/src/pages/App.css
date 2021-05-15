@@ -1,23 +1,3 @@
 .App {
-  text-align: center;
+  font-family: 'Tagesschrift';
 }
-
-.App-header {
-  background-color: #282c34b7;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-  .App-header::before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background: #3e4147 url('../assets/images/got-throne-countdown.JPG') center/200% no-repeat;
-    z-index: -1;
-  }
