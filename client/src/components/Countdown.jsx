@@ -29,10 +29,7 @@ const Countdown = () => {
 
     const midweekdate = new Date('6/2/2021');
     const currentdate = new Date();
-    if (
-      currentdate.getDate() === midweekdate.getDate() && currentdate.getMonth() === midweekdate.getMonth()
-      && currentdate.getFullYear() === midweekdate.getFullYear()
-    ) 
+    if ( !showHint && currentdate >= midweekdate ) 
       setShowHint(true);
 
     return timeLeft;
