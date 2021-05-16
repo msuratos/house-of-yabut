@@ -44,3 +44,11 @@
   color: rgb(209, 154, 4);
   z-index: 1;
 }
+
+.countdown-riddle {
+  bottom: 50px;
+  color: #FFFFFFA0;
+  font-size: x-small;
+  font-style: italic;
+  position: absolute;
+}

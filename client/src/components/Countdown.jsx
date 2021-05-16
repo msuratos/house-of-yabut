@@ -3,6 +3,7 @@ import './Countdown.css';
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({});
+  const [showHint, setShowHint] = useState(false);
 
   const calculateTimeLeft = () => {
     let difference = +new Date(`6/05/2021`) - +new Date();
@@ -18,13 +19,26 @@ const Countdown = () => {
 
       setTimeLeft(timeLeft);
     }
+    else {
+      //TODO: route to play video, then show details
+      // Store a cookie to say if they played the video already or not
+      // Play the video
+      // Show details
+      console.log("show details");
+    }
+
+    const midweekdate = new Date('6/2/2021');
+    const currentdate = new Date();
+    if (
+      currentdate.getDate() === midweekdate.getDate() && currentdate.getMonth() === midweekdate.getMonth()
+      && currentdate.getFullYear() === midweekdate.getFullYear()
+    ) 
+      setShowHint(true);
 
     return timeLeft;
   };
 
-  setTimeout(() => {
-    calculateTimeLeft();
-  }, 1000);
+  setTimeout(() => calculateTimeLeft(), 1000);
 
   return (
     <div className="countdown-container">
@@ -37,6 +51,9 @@ const Countdown = () => {
           <span className="countdown-number">{timeLeft.seconds}</span> <span className="countdown-label">Secs</span> &nbsp;&nbsp;
         </div>
       <label className="countdown-footer">Until the location is revealed...</label>
+      {showHint && 
+        (<label className="countdown-riddle">Have you solved the riddle yet?</label>)
+      }
     </div>
   );
 };
