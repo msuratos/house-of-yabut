@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './Countdown.css';
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({});
   const [showHint, setShowHint] = useState(false);
+  const history = useHistory();
 
   const calculateTimeLeft = () => {
     let difference = +new Date(`6/05/2021`) - +new Date();
@@ -24,7 +26,7 @@ const Countdown = () => {
       // Store a cookie to say if they played the video already or not
       // Play the video
       // Show details
-      console.log("show details");
+      history.push('/details');
     }
 
     const midweekdate = new Date('6/2/2021');
