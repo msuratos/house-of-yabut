@@ -8,7 +8,7 @@ const Details = () => {
             (navigator.platform.indexOf("iPad") !== -1) || 
             (navigator.platform.indexOf("iPod") !== -1)
         )
-            window.open("maps://36.2662590, -115.2643726");
+            window.open("maps://maps.apple.com/maps?daddr=36.2662590,-115.2643726");
         else /* else use Google */
             window.open("https://goo.gl/maps/HtZrjdGnV1RJzgmY7");
     };
