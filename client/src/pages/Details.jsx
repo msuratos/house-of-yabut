@@ -8,9 +8,9 @@ const Details = () => {
             (navigator.platform.indexOf("iPad") !== -1) || 
             (navigator.platform.indexOf("iPod") !== -1)
         )
-            window.open("https://maps.apple.com/maps?daddr=9721+Pine+Falls+Dr,+Las+Vegas,+NV+89149");
+            window.open("https://maps.apple.com/maps?daddr=9721+Pan+Falls+Dr,+Las+Vegas,+NV+89149");
         else /* else use Google */
-            window.open("https://goo.gl/maps/HtZrjdGnV1RJzgmY7");
+            window.open("https://goo.gl/maps/YToZSDL56WfefREy9");
     };
 
     return (
