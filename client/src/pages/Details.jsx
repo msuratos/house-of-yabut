@@ -8,7 +8,7 @@ const Details = () => {
             (navigator.platform.indexOf("iPad") !== -1) || 
             (navigator.platform.indexOf("iPod") !== -1)
         )
-            window.open("maps://goo.gl/maps/HtZrjdGnV1RJzgmY7");
+            window.open("maps://36.2662590, -115.2643726");
         else /* else use Google */
             window.open("https://goo.gl/maps/HtZrjdGnV1RJzgmY7");
     };
@@ -28,7 +28,9 @@ const Details = () => {
                         </li>
                         <li>
                             <label className="details-content-label">Facebook Live:</label>
-                            <a href="/details" onClick={(e) => window.open("https://www.facebook.com/events/129180445848737")}>Facebook Live Link</a>
+                            <a href="/details" onClick={(e) => window.open("https://www.facebook.com/events/129180445848737")}>
+                                Facebook Live Link (For those unable to grace us with their presence
+                            </a>
                         </li>
                     </ul>
                     <p>Answer to riddle: Put invitation in fridge for 15-30min</p>
