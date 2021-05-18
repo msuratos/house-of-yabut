@@ -36,7 +36,7 @@ const Details = () => {
                 </a>
               </li>
             </ul>
-            <p>Answer to riddle: Put invitation in fridge for 15-30min</p>
+            <p className="details-content-riddle">Answer to riddle: Put invitation in fridge for 15-30min</p>
           </div>
         )}
       </div>
