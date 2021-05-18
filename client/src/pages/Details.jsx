@@ -34,7 +34,7 @@ const Details = () => {
                   </li>
                   <li>
                     <label className="details-content-label">FB Live:</label>
-                    <a href="/details" onClick={(e) => window.open("https://www.facebook.com/events/129180445848737")}>
+                    <a href="/details" onClick={(e) => window.open("https://fb.me/e/2iHXYMCHd")}>
                       Click Here
                     </a>
                     <br />
