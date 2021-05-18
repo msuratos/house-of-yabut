@@ -17,6 +17,11 @@
     padding-right: 10px;
 }
 
+.details-content-riddle {
+    font-size: x-small;
+    font-style: italic;
+}
+
 ul {
     padding-left: 0;
 }
