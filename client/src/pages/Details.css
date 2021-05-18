@@ -8,18 +8,40 @@
     top: 0;
 }
 
+.details-content-background {
+    background: #00000000 url('../assets/images/got-throne-details.JPG') center/200% no-repeat;
+    height: 50%;
+    opacity: 0.5;
+  }
+
 .details-content {
+    background-color: #0000008c;
+    border-radius: 10px;
     color: #FFFFFF;
     margin: 15px 10px;
+    margin-top: 100px;
+    position: absolute;
+    padding: 0px 10px;
+    top: 0;
+    z-index: 1;
 }
+
+    .details-content a {
+        color: #DACBCB;
+        font-size: x-small;
+    }
 
 .details-content-label {
     padding-right: 10px;
 }
 
 .details-content-riddle {
+    bottom: 10px;
+    color: #FFFFFF;
     font-size: x-small;
     font-style: italic;
+    margin: 15px 10px;
+    position: fixed;
 }
 
 ul {

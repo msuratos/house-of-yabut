@@ -21,24 +21,31 @@ const Details = () => {
     <>
       <div className="details-container">
         <Video id="lJJCzK0eFII" setshowcontent={setshowcontent} />
-        {showcontent && (
-          <div className="details-content">
-            <p>You have been cordially invited to attend the GoT gender reveal party</p>
-            <ul>
-              <li>
-                <label className="details-content-label">Location:</label>
-                <a href="/details" onClick={onLocationClick}>9721 Pine Falls Street Las Vegas, NV 89178</a>
-              </li>
-              <li>
-                <label className="details-content-label">Facebook Live:</label>
-                <a href="/details" onClick={(e) => window.open("https://www.facebook.com/events/129180445848737")}>
-                  Facebook Live Link (For those unable to grace us with their presence
-                </a>
-              </li>
-            </ul>
-            <p className="details-content-riddle">Answer to riddle: Put invitation in fridge for 15-30min</p>
-          </div>
-        )}
+        <div style={{height: '100%', width: '100%', position: 'fixed'}}>
+          <div className="details-content-background"></div>
+          {showcontent && (
+            <>
+              <div className="details-content">
+                <p style={{textAlign: 'center'}}>You have been cordially invited to attend the GoT gender reveal party</p>
+                <ul>
+                  <li>
+                    <label className="details-content-label">Addr:</label>
+                    <a href="/details" onClick={onLocationClick}>9721 Pine Falls Street Las Vegas, NV 89178</a>
+                  </li>
+                  <li>
+                    <label className="details-content-label">FB Live:</label>
+                    <a href="/details" onClick={(e) => window.open("https://www.facebook.com/events/129180445848737")}>
+                      Click Here
+                    </a>
+                    <br />
+                    <span style={{fontSize: 'xx-small'}}>(For those unable to grace us with their presence)</span>
+                  </li>
+                </ul>
+              </div>
+              <p className="details-content-riddle">Answer to riddle: Put invitation in fridge for 15-30min</p>
+            </>
+          )}
+        </div>
       </div>
     </>
   );
