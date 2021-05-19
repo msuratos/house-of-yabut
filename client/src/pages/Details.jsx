@@ -29,20 +29,21 @@ const Details = () => {
                 <p style={{textAlign: 'center'}}>You have been cordially invited to attend the GoT gender reveal party</p>
                 <ul>
                   <li>
-                    <label className="details-content-label">Addr:</label>
-                    <a href="/details" onClick={onLocationClick}>9721 Pine Falls Street Las Vegas, NV 89178</a>
-                  </li>
-                  <li>
-                    <label className="details-content-label">FB Live:</label>
+                    <div style={{paddingBottom: '5px'}}><span style={{fontSize: 'xx-small'}}>For those unable to grace us with their presence,</span></div>
+                    <label className="details-content-label">Facebook Live:</label>
                     <a href="/details" onClick={(e) => window.open("https://fb.me/e/2iHXYMCHd")}>
                       Click Here
                     </a>
-                    <br />
-                    <span style={{fontSize: 'xx-small'}}>(For those unable to grace us with their presence)</span>
+                  </li>
+                  <li>
+                    <label className="details-content-label">Address:</label>
+                    <a href="/details" onClick={onLocationClick}>
+                      <span className="got-number">9721</span> Pan Falls &nbsp;St. &nbsp;Las Vegas, NV <span className="got-number">89178</span>
+                    </a>
                   </li>
                 </ul>
               </div>
-              <p className="details-content-riddle">Answer to riddle: Put invitation in fridge for 15-30min</p>
+              <p className="details-content-riddle">To reveal the truth, one must place the paper invitation in frozen storage for <span className="got-number">15-30</span>min</p>
             </>
           )}
         </div>
