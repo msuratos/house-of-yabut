@@ -8,8 +8,8 @@
 }
 
 .countdown-body {
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  border: #FFFFFF solid 1px;
+  margin: 2rem .5rem;
   z-index: 1;
 }
 
@@ -31,7 +31,7 @@
 
 .countdown-header {
   font-size: x-large;
-  margin-top: 50px;
+  margin-top: 25px;
   z-index: 1;
 }
 
