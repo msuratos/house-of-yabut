@@ -26,7 +26,7 @@ const Details = () => {
           {showcontent && (
             <>
               <div className="details-content">
-                <p style={{textAlign: 'center'}}>You have been cordially invited to attend the GoT gender reveal party</p>
+                <p style={{textAlign: 'center'}}>You have been cordially invited to attend the Game of Thrones gender reveal party</p>
                 <ul>
                   <li>
                     <div style={{paddingBottom: '5px'}}><span style={{fontSize: 'xx-small'}}>For those unable to grace us with their presence,</span></div>
