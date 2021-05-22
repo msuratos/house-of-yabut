@@ -45,11 +45,11 @@ const Countdown = () => {
       <label className="countdown-header">Winter is coming...</label>
       <div className="countdown-body">
         <span className="countdown-number">{timeLeft.days}</span> <span className="countdown-label">Days</span> &nbsp;&nbsp;
-          <span className="countdown-number">{timeLeft.hours}</span> <span className="countdown-label">Hrs</span> &nbsp;&nbsp;
-          <span className="countdown-number">{timeLeft.minutes}</span> <span className="countdown-label">Mins</span> &nbsp;&nbsp;
-          <span className="countdown-number">{timeLeft.seconds}</span> <span className="countdown-label">Secs</span> &nbsp;&nbsp;
-        </div>
-      <label className="countdown-footer">Until the location is revealed...</label>
+        <span className="countdown-number">{timeLeft.hours}</span> <span className="countdown-label">Hrs</span> &nbsp;&nbsp;
+        <span className="countdown-number">{timeLeft.minutes}</span> <span className="countdown-label">Mins</span> &nbsp;&nbsp;
+        <span className="countdown-number">{timeLeft.seconds}</span> <span className="countdown-label">Secs</span> &nbsp;&nbsp;
+        <label className="countdown-footer">Until the location is revealed...</label>
+      </div>
       {showHint && 
         (<label className="countdown-riddle">Have you solved the riddle yet?</label>)
       }
