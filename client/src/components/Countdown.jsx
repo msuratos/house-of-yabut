@@ -3,34 +3,27 @@ import { useHistory } from 'react-router-dom';
 import './Countdown.css';
 
 const Countdown = () => {
-  const [timeLeft, setTimeLeft] = useState({});
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [showHint, setShowHint] = useState(false);
   const history = useHistory();
 
-  const calculateTimeLeft = () => {
-    let difference = +new Date(`6/05/2021`) - +new Date();
-    let timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  const midweekdate = new Date('06/02/2021 07:00:00');
+  const releasedate = new Date('06/04/2021 19:00:00');
 
-    if (difference > 0) {
-      timeLeft = {
+  const calculateTimeLeft = () => {
+    const currentdate = new Date();
+    const difference = +releasedate - +currentdate;
+
+    if (difference > 0)
+      setTimeLeft({
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60)
-      };
-
-      setTimeLeft(timeLeft);
-    }
-    else {
-      //TODO: route to play video, then show details
-      // Store a cookie to say if they played the video already or not
-      // Play the video
-      // Show details
+      });
+    else
       history.push('/details');
-    }
 
-    const midweekdate = new Date('6/2/2021');
-    const currentdate = new Date();
     if ( !showHint && currentdate >= midweekdate ) 
       setShowHint(true);
 
@@ -47,7 +40,7 @@ const Countdown = () => {
         <span className="countdown-number">{timeLeft.days}</span> <span className="countdown-label">Days</span> &nbsp;&nbsp;
         <span className="countdown-number">{timeLeft.hours}</span> <span className="countdown-label">Hrs</span> &nbsp;&nbsp;
         <span className="countdown-number">{timeLeft.minutes}</span> <span className="countdown-label">Mins</span> &nbsp;&nbsp;
-        <span className="countdown-number">{timeLeft.seconds}</span> <span className="countdown-label">Secs</span> &nbsp;&nbsp;
+        <span className="countdown-number">{timeLeft.seconds}</span> <span className="countdown-label">Secs</span><br />
         <label className="countdown-footer">Until the location is revealed...</label>
       </div>
       {showHint && 
