@@ -1,3 +1,18 @@
+.contact-info {
+    bottom: 25px;
+    color: #FFFFFF;
+    font-size: x-small;
+    font-style: italic;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+  
+    .contact-info a {
+      color: #DACBCB;
+      font-size: small;
+    }
+
 .details-container {
     background-color: #000000;
     left: 0;
@@ -12,7 +27,7 @@
     background: #00000000 url('../assets/images/got-throne-details.JPG') center/200% no-repeat;
     height: 50%;
     opacity: 0.5;
-  }
+}
 
 .details-content {
     background-color: #0000008c;
@@ -36,11 +51,11 @@
 }
 
 .details-content-riddle {
-    bottom: 10px;
+    bottom: 50px;
     color: #FFFFFF;
     font-size: x-small;
     font-style: italic;
-    margin: 15px 10px;
+    margin: 0px 10px;
     position: fixed;
     text-align: center;
 }
