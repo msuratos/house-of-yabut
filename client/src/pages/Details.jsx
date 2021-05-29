@@ -37,8 +37,9 @@ const Details = () => {
                     <label className="details-content-label">Where:</label>
                     <a href="/details" onClick={onLocationClick}>
                       <span className="got-number">9721</span> Pan Falls &nbsp;St. &nbsp;Las Vegas, NV <span className="got-number">89178</span>
-                    </a>
+                    </a><br />
                   </li>
+                  <li><label className="details-content-label">Gatecode:</label><span className="got-number">4321</span></li>
                   <li>&nbsp;</li>
                   <li>
                     <div style={{paddingBottom: '5px'}}><span style={{fontSize: 'xx-small'}}>For those unable to grace us with their presence,</span></div>
@@ -52,6 +53,7 @@ const Details = () => {
               <p className="details-content-riddle">To reveal the truth, one must place the paper invitation in frozen storage for <span className="got-number">15-30</span>min</p>
             </>
           )}
+          <div className="contact-info">Questions? Text or call us:<a href="tel:702.460.3375">702.460.3375</a></div>
         </div>
       </div>
     </>

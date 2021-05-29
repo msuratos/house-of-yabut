@@ -1,3 +1,16 @@
+.contact-info-countdown {
+  bottom: 25px;
+  color: #FFFFFFA0;
+  font-size: x-small;
+  font-style: italic;
+  position: absolute;
+}
+
+  .contact-info-countdown a {
+    color: #DACBCB;
+    font-size: small;
+}
+
 .countdown-background {
   background: #00000000 url('../assets/images/got-throne-countdown.JPG') center/200% no-repeat;
   content: "";

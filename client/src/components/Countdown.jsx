@@ -46,6 +46,7 @@ const Countdown = () => {
       {showHint && 
         (<label className="countdown-riddle">Have you solved the riddle yet?</label>)
       }
+      <div className="contact-info-countdown">Questions? Text or call us:<a href="tel:702.460.3375">702.460.3375</a></div>
     </div>
   );
 };
