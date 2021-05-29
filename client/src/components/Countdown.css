@@ -4,6 +4,7 @@
   font-size: x-small;
   font-style: italic;
   position: absolute;
+  z-index: 1001; /* This is to make it clickable since snow animations overlap everything */
 }
 
   .contact-info-countdown a {
