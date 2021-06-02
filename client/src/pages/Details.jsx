@@ -39,7 +39,10 @@ const Details = () => {
                       <span className="got-number">9721</span> Pan Falls &nbsp;St. &nbsp;Las Vegas, NV <span className="got-number">89178</span>
                     </a><br />
                   </li>
-                  <li><label className="details-content-label">Gatecode:</label><span className="got-number">4321</span></li>
+                  <li><label className="details-content-label">Gatecode:</label>
+                    <span style={{fontFamily: 'sans-serif'}}>#</span>
+                    <span className="got-number">4321</span>
+                  </li>
                   <li>&nbsp;</li>
                   <li>
                     <div style={{paddingBottom: '5px'}}><span style={{fontSize: 'xx-small'}}>For those unable to grace us with their presence,</span></div>
