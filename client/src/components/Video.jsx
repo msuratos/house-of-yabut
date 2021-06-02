@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { checkCookie, setCookie } from '../helpers/cookieHelper';
 
 // Copied from https://stackoverflow.com/questions/54017100/how-to-integrate-youtube-iframe-api-in-reactjs-solution
 const Video = (props) => {
@@ -9,7 +10,12 @@ const Video = (props) => {
   };
 
   const onPlayerStateChange = (event) => {
-    if (event.data === window.YT.PlayerState.ENDED) setshowcontent(true);
+    if (event.data === window.YT.PlayerState.ENDED) {
+      setshowcontent(true);
+
+      if (!checkCookie('hasseenvideo'))
+        setCookie('hasseenvideo', true, 5);
+    }
   };
 
   const loadVideo = () => {
