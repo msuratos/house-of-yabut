@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Video from '../components/Video';
+import { checkCookie } from '../helpers/cookieHelper';
 import './Details.css'
 
 const Details = () => {
   const [showcontent, setshowcontent] = useState(false);
+
+  useEffect(() => {
+    if (checkCookie('hasseenvideo'))
+      setshowcontent(true);
+  }, [setshowcontent]);
 
   const onLocationClick = () => {
     if (
