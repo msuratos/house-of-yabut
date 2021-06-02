@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+
+import { useAuth } from '../hooks/useAuth';
 import './Countdown.css';
 
 const Countdown = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [showHint, setShowHint] = useState(false);
   const history = useHistory();
+  const auth = useAuth();
 
   const midweekdate = new Date('06/02/2021 07:00:00');
   const releasedate = new Date('06/04/2021 19:00:00');
@@ -21,8 +24,10 @@ const Countdown = () => {
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60)
       });
-    else
+    else {
+      auth.setCanSeeDetailsPage(true);
       history.push('/details');
+    }
 
     if ( !showHint && currentdate >= midweekdate ) 
       setShowHint(true);
