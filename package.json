@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "build": "cd client && npm i && npm run build && rm -rf ../build && mv build/ ../",
+    "build": "cd client && npm i && npm run build --prod && rm -rf ../build && mv build/ ../ && rm -rf ../client",
     "debug": "nodemon --nolazy src/app.js"
   },
   "repository": {
