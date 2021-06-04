@@ -60,6 +60,11 @@
     text-align: center;
 }
 
+.details-content-riddle a {
+        color: #DACBCB;
+        font-size: x-small;
+    }
+
 .got-number {
     font-size: small;
 }
