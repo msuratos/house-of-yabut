@@ -59,7 +59,11 @@ const Details = () => {
                   </li>
                 </ul>
               </div>
-              <p className="details-content-riddle">To reveal the truth, one must place the paper invitation in frozen storage for <span className="got-number">15-30</span>min</p>
+              <p className="details-content-riddle">
+                To reveal the truth, one must place the paper invitation in frozen storage for <span className="got-number">15-30</span>min
+                <br />
+                <a href="https://www.youtube.com/watch?v=Pu8pVz2_tNU">(Video answer)</a>
+              </p>
             </>
           )}
           <div className="contact-info">Questions? Text or call us:<a href="tel:702.460.3375">702.460.3375</a></div>
