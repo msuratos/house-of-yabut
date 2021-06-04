@@ -11,7 +11,7 @@ const Countdown = () => {
   const auth = useAuth();
 
   const midweekdate = new Date('06/02/2021 07:00:00 GMT-07:00');
-  const releasedate = new Date('06/04/2021 13:00:00 GMT-07:00');
+  const releasedate = new Date('06/04/2021 19:00:00 GMT-07:00');
 
   const calculateTimeLeft = () => {
     const currentdate = new Date();
